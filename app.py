@@ -29,6 +29,11 @@ def evaluate():
                 if data[i]["voted"] == False:
                     data[i]["voted"] = True
                     overwrite(data)
+                    with open("data/votes.json", 'r') as f:
+                        vote_data = json.load(f)
+                    vote_data[vote] += 1
+                    with open("data/votes.json", 'w') as f:
+                        json.dump(vote_data, f, ensure_ascii= False, indent=4)
                     return render_template('success.html', passportID=passportID, vote=vote)
                 else:
                     return render_template('error.html', message="Already voted")
