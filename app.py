@@ -4,11 +4,22 @@ import random as r
 import json
 from datetime import datetime as dt
 
+
+dubiousIPs = []   
+forbiddenIps = []
+
+
 app = Flask(__name__)
 def overwrite(data):
     with open("data/verif.json", 'w') as file:
         json.dump(data, file, ensure_ascii= False, indent=4)
 
+def count_dubious_IPs(liste, tester):
+    count = 0
+    for i in liste:
+        if i == tester:
+            count += 1
+    return count
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -25,14 +36,18 @@ def leaderboard():
         BSW = file_content["BSW"]
         Union = file_content["Union"]
         return render_template('leaderboard.html', FDP = FDP, Union = Union, SPD = SPD, Grüne = Grüne, AfD = AfD, Die_Linke = Die_Linke, BSW = BSW)
-    
+ 
 
 @app.route('/login')
 def login():
+    if request.remote_addr in forbiddenIps:
+        return render_template('error.html', message="IP address is banned")
     return render_template('login.html')
 
 @app.route('/evaluate', methods=['GET', 'POST'])
-def evaluate():
+def evaluate():#
+    if request.remote_addr in forbiddenIps:
+        return render_template('error.html', message="IP address is banned")
     passportID = request.form.get("passportId")
     verifcode = request.form.get("verifcode")
     vote = request.form.get("vote")
@@ -41,7 +56,6 @@ def evaluate():
     for i in data:
         if i == passportID:
             if verifcode == data[i]["verif-code"]:
-                print("tgtht  ", data[i]["voted"])
                 if data[i]["voted"] == False:
                     data[i]["voted"] = True
                     overwrite(data)
@@ -56,7 +70,10 @@ def evaluate():
                 else:
                     return render_template('error.html', message="Already voted")
             else:
-                print("error1")
+                dubiousIPs.append(request.remote_addr)
+                print(count_dubious_IPs(dubiousIPs, request.remote_addr))
+                if count_dubious_IPs(dubiousIPs, request.remote_addr) >= 5:
+                    forbiddenIps.append(request.remote_addr)
                 return render_template('error.html', message="Invalid verification code")
 
 def generate_verif_code(passport_id = str):
