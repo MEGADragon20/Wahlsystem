@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template, request, 
+from flask import render_template, request
 import random as r
 import json
 from datetime import datetime as dt
@@ -21,7 +21,7 @@ def leaderboard():
         SPD = file_content["SPD"]
         Grüne = file_content["Grüne"]
         AfD = file_content["AfD"]
-        Die_Linke = file_content["Die_Linke"]
+        Die_Linke = file_content["Die Linke"]
         BSW = file_content["BSW"]
         Union = file_content["Union"]
         return render_template('leaderboard.html', FDP = FDP, Union = Union, SPD = SPD, Grüne = Grüne, AfD = AfD, Die_Linke = Die_Linke, BSW = BSW)

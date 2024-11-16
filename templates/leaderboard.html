@@ -1,21 +1,81 @@
+<!DOCTYPE html>
 <html>
- 
+
 <head>
     <title>Voting Leaderboard</title>
     <style>
-        div {
-            width: 400px;
-            border: 5px solid #222;
-            background-color: #444;
-            color: #CCC;
-            padding: 10px;
-            margin-bottom: 5px;
-        }
-        input {
-            border: #222 solid 2px;
-        }
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
     </style>
 </head>
- 
- 
+
+<table>
+    <tr>
+        <th>Partei</th>
+        <th>Stimmen</th>
+    </tr>
+    <tr>
+        <td>FDP</td>
+        <td>{{FDP}}</td>
+    <tr>   
+        <td>Union</td>
+        <td>{{Union}}</td>
+    </tr> 
+    </tr> 
+        <td>SPD</td>
+        <td>{{SPD}}</td>
+    </tr> 
+    </tr> 
+        <td>Die Linke</td>
+        <td>{{Die_Linke}}</td>
+    </tr> 
+    </tr> 
+        <td>BSW</td>
+        <td>{{BSW}}</td>
+    </tr> 
+    </tr> 
+        <td>Grüne</td>
+        <td>{{Grüne}}</td>
+    </tr> 
+    </tr> 
+        <td>AfD</td>
+        <td>{{AfD}}</td>
+    </tr>
+</table>
+
+<svg class="chart" width="450" height="300" aria-labelledby="chartinfo" viewBox="0 0 450 300">
+	<desc id="chartinfo">Voting Leaderboard</desc>
+
+	<g class="bar purple" tabindex="0">
+		<rect width="40" height="45" />
+		<text x="55" y="40">{{FDP}} FDP</text>
+	</g>
+	<g class="bar green" tabindex="0">
+		<rect width="80" height="45" y="50"/>
+		<text x="95" y="90">{{Union}} Union</text>
+	</g>
+	<g class="bar yellow" tabindex="0">
+		<rect width="150" height="45" y="100" />
+		<text x="160" y="140">{{SPD}} SPD</text>
+	</g>
+	<g class="bar orange" tabindex="0">
+		<rect width="160" height="45" y="150" />
+		<text x="170" y="190">{{Die_Linke}} Die Linke</text>
+	</g>
+	<g class="bar red" tabindex="0">
+		<rect width="230" height="45" y="200" />
+		<text x="245" y="240">{{BSW}} BSW</text>
+	</g>
+    <g class="bar red" tabindex="0">
+		<rect width="230" height="45" y="200" />
+		<text x="245" y="240">{{Grüne}} Grüne</text>
+	</g>
+    <g class="bar red" tabindex="0">
+		<rect width="230" height="45" y="200" />
+		<text x="245" y="240">{{AfD}} AfD</text>
+	</g>
+</svg>
+
 </html>
