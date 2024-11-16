@@ -5,21 +5,22 @@
     },
     "banna": {
         "verif-code": "AEDDEDCEABAEEDDC",
-        "voted": false
+        "voted": true
     },
     "g": {
-        "verif-code": "EDCBCBBBCCABBBBB",
+        "verif-code": "ACAADBCDECBBECBE",
         "voted": false
     },
     "a": {
-        "verif-code": "AEDCEAACBDAECAEB",
+        "verif-code": "EDCCADCCDBBDCACC",
         "voted": false
     },
     "f": {
-        "verif-code": "EACECEBEAAECDADC",
+        "verif-code": "EACACEBDAEECCCDE",
         "voted": false
     },
     "t": {
-        "verif-code": "BCAAACBCEEACCEEA",
+        "verif-code": "DBEBDEDCBBCCDCEC",
+        "voted": false
     }
 }

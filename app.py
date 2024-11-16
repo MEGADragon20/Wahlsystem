@@ -34,7 +34,7 @@ def leaderboard():
             sum += file_content[i]
         FDP = file_content["FDP"]/sum
         SPD = file_content["SPD"]/sum
-        Grüne = file_content["Grüne"]/sum
+        Gruene = file_content["Gruene"]/sum
         AfD = file_content["AfD"]/sum
         Die_Linke = file_content["Die Linke"]/sum
         BSW = file_content["BSW"]/sum
@@ -49,7 +49,7 @@ def leaderboard():
 		        <rect fill="crimson" width="{Die_Linke*faktor}" height="45" y="50"/>
 	        </g>
 	        <g class="bar_green">
-		        <rect fill="green" width="{Grüne*faktor}" height="45" y="100"/>
+		        <rect fill="green" width="{Gruene*faktor}" height="45" y="100"/>
 	        </g>
 	        <g class="bar_red">
 		        <rect fill="red" width="{SPD*faktor}" height="45" y="150" />
