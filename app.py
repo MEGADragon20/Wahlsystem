@@ -1,7 +1,8 @@
 from flask import Flask
-from flask import render_template, request
+from flask import render_template, request, jsonify
 import random as r
 import json
+from datetime import datetime as dt
 
 app = Flask(__name__)
 def overwrite(data):
@@ -26,6 +27,7 @@ def evaluate():
     for i in data:
         if i == passportID:
             if verifcode == data[i]["verif-code"]:
+                print("tgtht  ", data[i]["voted"])
                 if data[i]["voted"] == False:
                     data[i]["voted"] = True
                     overwrite(data)
@@ -34,10 +36,13 @@ def evaluate():
                     vote_data[vote] += 1
                     with open("data/votes.json", 'w') as f:
                         json.dump(vote_data, f, ensure_ascii= False, indent=4)
+                    with open("data/log.txt", 'a') as f:
+                        f.write(f"{passportID}, {vote}, {dt.now()}\n")
                     return render_template('success.html', passportID=passportID, vote=vote)
                 else:
                     return render_template('error.html', message="Already voted")
             else:
+                print("error1")
                 return render_template('error.html', message="Invalid verification code")
 
 def generate_verif_code(passport_id = str):
@@ -52,6 +57,6 @@ def generate_verif_code(passport_id = str):
 def preset(IDs = list):
     for i in IDs:
         generate_verif_code(i)
+preset(["g", "a", "f", "t"])
 
-generate_verif_code("banna")
 app.run(host = "0.0.0.0", port = "5500", debug=True) 
