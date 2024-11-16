@@ -12,6 +12,20 @@ def overwrite(data):
 def home():
     return render_template('index.html')
 
+@app.route('/leaderboard')
+def leaderboard():
+    with open("data/votes.json", 'r') as f:
+        file_content = json.load(f)
+        FDP = file_content["FDP"]
+        SPD = file_content["SPD"]
+        Grüne = file_content["Grüne"]
+        AfD = file_content["AfD"]
+        Die_Linke = file_content["Linke"]
+        BSW = file_content["BSW"]
+        Union = file_content["Union"]
+        return render_template('leaderboard.html', FDP = FDP, Union = Union, SPD = SPD, Grüne = Grüne, AfD = AfD, Die_Linke = Die_Linke, BSW = BSW)
+    
+
 @app.route('/login')
 def login():
     return render_template('login.html')
