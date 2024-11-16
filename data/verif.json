@@ -1,28 +1,401 @@
 {
-    "Fafa": {
-        "verif-code": "DBBCBBECDACCEDDC",
-        "voted": true
+    "T2200015": {
+        "verif-code": "MJxXT7JQHlT6oBLp",
+        "voted": false
     },
-    "banna": {
-        "verif-code": "AEDDEDCEABAEEDDC",
-        "voted": true
+    "K3500023": {
+        "verif-code": "gVy4ALaJlKpvmKMj",
+        "voted": false
+    },
+    "C4100067": {
+        "verif-code": "zkoJqnRLf6XCxcfq",
+        "voted": false
+    },
+    "T2800011": {
+        "verif-code": "8C7oUfju99191JLn",
+        "voted": false
+    },
+    "K1400054": {
+        "verif-code": "RXovjyp8tpHwoaFa",
+        "voted": false
+    },
+    "C3900002": {
+        "verif-code": "PGu61r6SZJasTP2N",
+        "voted": false
+    },
+    "T1100029": {
+        "verif-code": "8cJZXbgOtp9OMb7M",
+        "voted": false
+    },
+    "K2400018": {
+        "verif-code": "LNYi2WOVadJ87qx9",
+        "voted": false
+    },
+    "C3000072": {
+        "verif-code": "AZggpfRDegxEwrRO",
+        "voted": false
+    },
+    "T2100060": {
+        "verif-code": "k33R6WhelJ8fFaNH",
+        "voted": false
+    },
+    "K1900046": {
+        "verif-code": "w4RQPtu7CRPch6PQ",
+        "voted": false
+    },
+    "C3300008": {
+        "verif-code": "xlQSWzdFfNLwMTNk",
+        "voted": false
+    },
+    "T1200034": {
+        "verif-code": "dg9M8SrZq6xHPaUP",
+        "voted": false
+    },
+    "K2200081": {
+        "verif-code": "rcHZmzG4UaQ8ixWK",
+        "voted": false
+    },
+    "C4200059": {
+        "verif-code": "fkE5glaRgBb9FUpc",
+        "voted": false
+    },
+    "T1800027": {
+        "verif-code": "dKmdJhdwIu31dvBx",
+        "voted": false
+    },
+    "K3700061": {
+        "verif-code": "4gLlhq4Ifz4q6Mpm",
+        "voted": false
+    },
+    "C4000019": {
+        "verif-code": "Wee1JhlApoFGDAzt",
+        "voted": false
+    },
+    "T2500033": {
+        "verif-code": "FpxQekPVpIjqCotr",
+        "voted": false
+    },
+    "K1300079": {
+        "verif-code": "V2LL863ukUuwuJmw",
+        "voted": false
+    },
+    "C4400090": {
+        "verif-code": "UUjaUUlwaX93pHeS",
+        "voted": false
+    },
+    "T2700012": {
+        "verif-code": "OmjeUnyheRA4yVYq",
+        "voted": false
+    },
+    "K1600055": {
+        "verif-code": "yD83XSFr7TvalsEM",
+        "voted": false
+    },
+    "C3200068": {
+        "verif-code": "DNDqQM5oh75uWiUI",
+        "voted": false
+    },
+    "T1400047": {
+        "verif-code": "A1Jc8LMgnZsoMILc",
+        "voted": false
+    },
+    "K2300036": {
+        "verif-code": "QRx8lx7pCXpVMFOf",
+        "voted": false
+    },
+    "C3600073": {
+        "verif-code": "XaPRh4Tu5ALhPkFk",
+        "voted": false
+    },
+    "T1000088": {
+        "verif-code": "NFq7GydKEmZQahVF",
+        "voted": false
+    },
+    "K2100095": {
+        "verif-code": "SDUeVypEXd1BcEhH",
+        "voted": false
+    },
+    "C3100024": {
+        "verif-code": "ROBG8zkB6POafnUA",
+        "voted": false
+    },
+    "T1700056": {
+        "verif-code": "rehPOVwkureRzksC",
+        "voted": false
+    },
+    "K2800066": {
+        "verif-code": "jfS2PIrdbvBi7UVo",
+        "voted": false
+    },
+    "C3800071": {
+        "verif-code": "qp8qxgHvVKEChzCh",
+        "voted": false
+    },
+    "T1500050": {
+        "verif-code": "Mdmpuy6avNNYEqi5",
+        "voted": false
+    },
+    "K2000083": {
+        "verif-code": "NgBZFqmDG2XQM8sb",
+        "voted": false
+    },
+    "C2900044": {
+        "verif-code": "CFov4HuG4FxEPWJd",
+        "voted": false
+    },
+    "T1300022": {
+        "verif-code": "ihXeKPUjxxhb2sif",
+        "voted": false
+    },
+    "K1800009": {
+        "verif-code": "EqQwCPx9k54UnjhB",
+        "voted": false
+    },
+    "C4300074": {
+        "verif-code": "mm7MVZHN8jE2p3mw",
+        "voted": false
+    },
+    "T1600038": {
+        "verif-code": "YC8V9lq58Lz3IE98",
+        "voted": false
+    },
+    "K3400005": {
+        "verif-code": "FdguydUwyCDPtw1g",
+        "voted": false
+    },
+    "C4500091": {
+        "verif-code": "b4qa3Gd4yKPuZIwO",
+        "voted": false
+    },
+    "T3000049": {
+        "verif-code": "ZnwUoiqbVQ4J5Oiq",
+        "voted": false
+    },
+    "K1200077": {
+        "verif-code": "bkPoXfgFyJWAQnhT",
+        "voted": false
+    },
+    "C2700080": {
+        "verif-code": "fdqtkC26JGqf7Nc8",
+        "voted": false
+    },
+    "T2900062": {
+        "verif-code": "HtAPrdGUQvUFM4Nw",
+        "voted": false
+    },
+    "K1700093": {
+        "verif-code": "FLv9RCLt388kFOix",
+        "voted": false
+    },
+    "C4100036": {
+        "verif-code": "lJooRqMCo59IfFjy",
+        "voted": false
+    },
+    "T2200077": {
+        "verif-code": "ZTg8THQbdtCl1ADQ",
+        "voted": false
+    },
+    "K2400011": {
+        "verif-code": "8gHQQ4UXHtuIJezI",
+        "voted": false
+    },
+    "C3300048": {
+        "verif-code": "fBk9szsmEbwCWJh2",
+        "voted": false
+    },
+    "T1900009": {
+        "verif-code": "yxVhGtwtHa9haYgR",
+        "voted": false
+    },
+    "K3100055": {
+        "verif-code": "Y4zAxR4OcVTs8o1R",
+        "voted": false
+    },
+    "C3500022": {
+        "verif-code": "GflWMpMCkuiWSB3v",
+        "voted": false
+    },
+    "T2300019": {
+        "verif-code": "lS3NrlcH3n4ZSVlr",
+        "voted": false
+    },
+    "K3200083": {
+        "verif-code": "snxeFM7L3p2vUbkg",
+        "voted": false
+    },
+    "C3000067": {
+        "verif-code": "ZNe47ZqqVbnP6VtE",
+        "voted": false
+    },
+    "T2000072": {
+        "verif-code": "MVp7BDBGoXaFM2IL",
+        "voted": false
+    },
+    "K2900011": {
+        "verif-code": "c8Yh4dNit8JUq1A8",
+        "voted": false
+    },
+    "C4200064": {
+        "verif-code": "LJ1HZ4t8ArHm84KC",
+        "voted": false
+    },
+    "T2600090": {
+        "verif-code": "dZM5KnidWu6gG8BI",
+        "voted": false
+    },
+    "K3300050": {
+        "verif-code": "SCj6x3NFzxrTHHum",
+        "voted": false
+    },
+    "C3900012": {
+        "verif-code": "t8yEqb8kbuj1FPHz",
+        "voted": false
+    },
+    "T2400081": {
+        "verif-code": "81VxJmSP6G4sXvb8",
+        "voted": false
+    },
+    "K3600075": {
+        "verif-code": "uT6Ded8MkxSAgjWu",
+        "voted": false
+    },
+    "C3400029": {
+        "verif-code": "SaTFRb5x2sDusQa1",
+        "voted": false
+    },
+    "T1100042": {
+        "verif-code": "GNhXrFs4tbnNODOF",
+        "voted": false
+    },
+    "K1500034": {
+        "verif-code": "9xSpfeJL9LXSYnGV",
+        "voted": false
+    },
+    "C4000051": {
+        "verif-code": "ptCOpW8ZGfwz3p9X",
+        "voted": false
+    },
+    "T1800086": {
+        "verif-code": "2qhnDFcUoEFUTk82",
+        "voted": false
+    },
+    "K2600008": {
+        "verif-code": "lUrKY1vJ9iWkXNJh",
+        "voted": false
+    },
+    "C3700061": {
+        "verif-code": "Zyop5EIZPRKSOBHc",
+        "voted": false
+    },
+    "T2100065": {
+        "verif-code": "fzmkoCbIePelktP5",
+        "voted": false
+    },
+    "K1900057": {
+        "verif-code": "MyfUomIqoVajjy6Y",
+        "voted": false
+    },
+    "C2800033": {
+        "verif-code": "ZoksuhYPpqnJSsVE",
+        "voted": false
+    },
+    "T3000024": {
+        "verif-code": "v2ZwvsFvxQ2X3BXP",
+        "voted": false
+    },
+    "C4300062": {
+        "verif-code": "ARSg7Fs6QtwXzWpa",
+        "voted": false
+    },
+    "T1200047": {
+        "verif-code": "Mb9FSPfCmySFehKU",
+        "voted": false
+    },
+    "K2800099": {
+        "verif-code": "STf5JXHQ8JWPt9T3",
+        "voted": false
+    },
+    "C3800050": {
+        "verif-code": "RL6HbGUx4L2cjOaX",
+        "voted": false
+    },
+    "T2000034": {
+        "verif-code": "Z3pr1EAj3FrygLY7",
+        "voted": false
+    },
+    "K3100078": {
+        "verif-code": "aHoDDuDtocppORdT",
+        "voted": false
+    },
+    "C2900009": {
+        "verif-code": "busJXqtxFzngZ8ei",
+        "voted": false
+    },
+    "T1600023": {
+        "verif-code": "iPLPblkJtAVOmxzc",
+        "voted": false
+    },
+    "K1400088": {
+        "verif-code": "RoNsLxZkJkC9N1NO",
+        "voted": false
+    },
+    "C4100073": {
+        "verif-code": "nvoVdrvnhKlHCADr",
+        "voted": false
+    },
+    "T2300058": {
+        "verif-code": "Ovbt5MpsnAwZKiRB",
+        "voted": false
+    },
+    "K3300019": {
+        "verif-code": "jskc7qbqsmzVZufq",
+        "voted": false
+    },
+    "C3500066": {
+        "verif-code": "o9OXZUYUww5UsPL2",
+        "voted": false
+    },
+    "T2700046": {
+        "verif-code": "8pMGpkROArmaK6qz",
+        "voted": false
+    },
+    "K1800057": {
+        "verif-code": "Y2pJiSwvqpA5KIdv",
+        "voted": false
+    },
+    "C3200013": {
+        "verif-code": "3ue1tiYHKTW8vBws",
+        "voted": false
+    },
+    "T1400032": {
+        "verif-code": "1gOGL84aqRtAFI7R",
+        "voted": false
+    },
+    "K2500091": {
+        "verif-code": "pvlFBgAcBAZCnplv",
+        "voted": false
+    },
+    "C3600040": {
+        "verif-code": "dLAL9CbrdTFRZ2JA",
+        "voted": false
+    },
+    "T2200074": {
+        "verif-code": "EjayDlepTmRdlJcC",
+        "voted": false
+    },
+    "K1200053": {
+        "verif-code": "eXHpfWl3eddvKOtC",
+        "voted": false
+    },
+    "C4400085": {
+        "verif-code": "g27XZnh7wX1Uo75S",
+        "voted": false
+    },
+    "T2500098": {
+        "verif-code": "beoh17qwCaKgZJEW",
+        "voted": false
     },
     "g": {
-<<<<<<< Updated upstream
-        "verif-code": "EAAAEACECBAECCDD",
-        "voted": false
-    },
-    "a": {
-        "verif-code": "ABBEBBBDCBADEDBD",
-        "voted": false
-    },
-    "f": {
-        "verif-code": "ECABDAEBCBACDBDB",
-        "voted": false
-    },
-    "t": {
-        "verif-code": "AACCEACABECDCDAE",
-=======
         "verif-code": "CADDACABABBCBAEC",
         "voted": true
     },
@@ -36,7 +409,6 @@
     },
     "t": {
         "verif-code": "BEDADBDBAEDEAEDD",
->>>>>>> Stashed changes
         "voted": false
     }
 }

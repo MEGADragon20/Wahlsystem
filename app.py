@@ -120,18 +120,5 @@ def external_redirect():
 @app.route('/<path:subpath>')
 def catch_all(subpath):
     return render_template('404.html')
-def generate_verif_code(passport_id = str):
-    code = ""
-    for i in range(16):
-        code += r.choice(["A","B","C","D","E"])
-    with open("data/verif.json", 'r') as file:
-        data = json.load(file)
-    data[passport_id] = {"verif-code": code, "voted": False}
-    overwrite(data)
-
-def preset(IDs = list):
-    for i in IDs:
-        generate_verif_code(i)
-preset(["g", "a", "f", "t"])
 
 app.run(host = "0.0.0.0", port = "5500", debug=True) 
