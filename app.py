@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template, request, jsonify
+from flask import render_template, request, 
 import random as r
 import json
 from datetime import datetime as dt
@@ -21,7 +21,7 @@ def leaderboard():
         SPD = file_content["SPD"]
         Grüne = file_content["Grüne"]
         AfD = file_content["AfD"]
-        Die_Linke = file_content["Linke"]
+        Die_Linke = file_content["Die_Linke"]
         BSW = file_content["BSW"]
         Union = file_content["Union"]
         return render_template('leaderboard.html', FDP = FDP, Union = Union, SPD = SPD, Grüne = Grüne, AfD = AfD, Die_Linke = Die_Linke, BSW = BSW)
@@ -51,7 +51,7 @@ def evaluate():
                     with open("data/votes.json", 'w') as f:
                         json.dump(vote_data, f, ensure_ascii= False, indent=4)
                     with open("data/log.txt", 'a') as f:
-                        f.write(f"{passportID}, {vote}, {dt.now()}\n")
+                        f.write(f"{passportID}, {vote}, {dt.now()}, {request.remote_addr}\n")
                     return render_template('success.html', passportID=passportID, vote=vote)
                 else:
                     return render_template('error.html', message="Already voted")
