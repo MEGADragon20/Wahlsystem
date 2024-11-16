@@ -1,10 +1,26 @@
 {
     "Fafa": {
         "verif-code": "DBBCBBECDACCEDDC",
-        "voted": false
+        "voted": true
     },
     "banna": {
-        "verif-code": "BBDCCDCAADEBEBDC",
+        "verif-code": "AEDDEDCEABAEEDDC",
+        "voted": false
+    },
+    "g": {
+        "verif-code": "ACBEBCCAABDCECBB",
+        "voted": false
+    },
+    "a": {
+        "verif-code": "BACCCCDAEEBDBEBA",
+        "voted": false
+    },
+    "f": {
+        "verif-code": "BACCAACBCBEADCAE",
+        "voted": false
+    },
+    "t": {
+        "verif-code": "EABCBEAACBCDADEB",
         "voted": false
     }
 }

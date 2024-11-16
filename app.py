@@ -54,4 +54,4 @@ def preset(IDs = list):
         generate_verif_code(i)
 
 generate_verif_code("banna")
-app.run(host = "0.0.0.0", port = "5000", debug=True) 
+app.run(host = "0.0.0.0", port = "5500", debug=True) 
