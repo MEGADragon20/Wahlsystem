@@ -3,7 +3,7 @@ from flask import render_template, request, redirect, jsonify
 import random as r
 import json
 from datetime import datetime as dt
-
+import requests
 
 dubiousIPs = []   
 forbiddenIps = []
@@ -93,8 +93,14 @@ def evaluate():#
                     vote_data[vote] += 1
                     with open("data/votes.json", 'w') as f:
                         json.dump(vote_data, f, ensure_ascii= False, indent=4)
-                    with open("data/log.txt", 'a') as f:
-                        f.write(f"{passportID}, {vote}, {dt.now()}, {request.remote_addr}\n")
+                    pidgeon_message = {
+                        "passportId": passportID,
+                        "vote": vote
+                    }
+                    response = requests.post('http://10.15.188.93:5000/x', json = pidgeon_message)
+                    if response.status_code != 200:
+                        with open("data/log.txt", 'a') as f:
+                            f.write(f"{passportID}, {vote}, {dt.now()}, {request.remote_addr}\n")
                     return render_template('success.html', passportID=passportID, vote=vote)
                 else:
                     return render_template('error.html', message="Already voted")

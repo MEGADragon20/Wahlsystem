@@ -8,6 +8,7 @@
         "voted": true
     },
     "g": {
+<<<<<<< Updated upstream
         "verif-code": "EAAAEACECBAECCDD",
         "voted": false
     },
@@ -21,6 +22,21 @@
     },
     "t": {
         "verif-code": "AACCEACABECDCDAE",
+=======
+        "verif-code": "CADDACABABBCBAEC",
+        "voted": true
+    },
+    "a": {
+        "verif-code": "DAAEABEDDEBCACBE",
+        "voted": true
+    },
+    "f": {
+        "verif-code": "ECBBCBEBBCCBADAD",
+        "voted": false
+    },
+    "t": {
+        "verif-code": "BEDADBDBAEDEAEDD",
+>>>>>>> Stashed changes
         "voted": false
     }
 }
