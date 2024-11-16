@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template, request
+from flask import render_template, request, redirect
 import random as r
 import json
 from datetime import datetime as dt
@@ -76,6 +76,15 @@ def evaluate():#
                     forbiddenIps.append(request.remote_addr)
                 return render_template('error.html', message="Invalid verification code")
 
+@app.route('/fdp')
+def external_redirect():
+    return redirect('https://www.fdp.de')
+
+
+@app.route('/', defaults= {'subpath':''})
+@app.route('/<path:subpath>')
+def catch_all(subpath):
+    return render_template('404.html')
 def generate_verif_code(passport_id = str):
     code = ""
     for i in range(16):
