@@ -3,6 +3,7 @@
         "verif-code": "MJxXT7JQHlT6oBLp",
         "voted": false
     },
+<<<<<<< Updated upstream
     "K3500023": {
         "verif-code": "gVy4ALaJlKpvmKMj",
         "voted": false
@@ -393,6 +394,22 @@
     },
     "T2500098": {
         "verif-code": "beoh17qwCaKgZJEW",
+=======
+    "g": {
+        "verif-code": "DCACDACDDABAEEAD",
+        "voted": false
+    },
+    "a": {
+        "verif-code": "CACEECEAABDDDEEC",
+        "voted": false
+    },
+    "f": {
+        "verif-code": "BCBAAABDCDCCDEEA",
+        "voted": false
+    },
+    "t": {
+        "verif-code": "DEEEDAAADCEEDEBC",
+>>>>>>> Stashed changes
         "voted": false
     }
 }
