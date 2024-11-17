@@ -39,32 +39,7 @@ def leaderboard():
         Die_Linke = file_content["Die Linke"]/sum
         BSW = file_content["BSW"]/sum
         Union = file_content["Union"]/sum
-        return f"""
-        <svg class="chart" width="450" height="350" aria-labelledby="chartinfo" viewBox="0 0 450 350">
-
-	        <g class="bar_purple">
-		        <rect fill="purple" width="{BSW*faktor}" height="45" y="0"/>
-	        </g>
-	        <g class="bar_pink">
-		        <rect fill="crimson" width="{Die_Linke*faktor}" height="45" y="50"/>
-	        </g>
-	        <g class="bar_green">
-		        <rect fill="green" width="{Gruene*faktor}" height="45" y="100"/>
-	        </g>
-	        <g class="bar_red">
-		        <rect fill="red" width="{SPD*faktor}" height="45" y="150" />
-	        </g>
-	        <g class="bar_yellow">
-		        <rect fill="yellow" width="{FDP*faktor}" height="45" y="200" />
-	        </g>
-            <g class="bar_black">
-		        <rect fill="black" width="{Union*faktor}" height="45" y="250"/>
-	        </g>
-            <g class="bar_blue">
-		        <rect fill="blue" width="{AfD*faktor}" height="45" y="300"/>
-	        </g>
-</svg>
-"""
+        return render_template('results.html', fdp=FDP*faktor, spd=SPD*faktor, gruene=Gruene*faktor, afd=AfD*faktor, linke=Die_Linke*faktor, bsw=BSW*faktor, union=Union*faktor)
  
 
 @app.route('/login')

@@ -1,0 +1,26 @@
+.party {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    font-size: 21px;
+    border-bottom: 1px solid black;
+}
+
+.chart > g:hover > rect {
+    opacity: 0.7;
+}

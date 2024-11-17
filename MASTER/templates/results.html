@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="static/styles/results.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Online Wahl Plattform</h1>
+    <h2>Ergebnisse für Online Wahl 2024</h2>
+    <div class="content">
+        <div class="party">
+            <span class="text">BSW</span>
+            <span class="text">Die Linke</span>
+            <span class="text">Grüne</span>
+            <span class="text">SPD</span>
+            <span class="text">FDP</span>
+            <span class="text">Union</span>
+            <span class="text">AfD</span>
+        </div>
+        <svg class="chart" width="450" height="350" aria-labelledby="chartinfo" viewBox="-0 0 450 350">
+	        <g class="bar_purple">
+		        <rect fill="purple" width="{{bsw}}" height="45" y="0"/>
+	        </g>
+	        <g class="bar_pink">
+		        <rect fill="crimson" width="{{linke}}" height="45" y="50"/>
+	        </g>
+	        <g class="bar_green">
+		        <rect fill="green" width="{{gruene}}" height="45" y="100"/>
+	        </g>
+	        <g class="bar_red">
+		        <rect fill="red" width="{{spd}}" height="45" y="150" />
+	        </g>
+	        <g class="bar_yellow">
+		        <rect fill="yellow" width="{{fdp}}" height="45" y="200" />
+	        </g>
+            <g class="bar_black">
+		        <rect fill="black" width="{{union}}" height="45" y="250"/>
+	        </g>
+            <g class="bar_blue">
+		        <rect fill="blue" width="{{afd}}" height="45" y="300"/>
+	        </g>
+        </svg>
+    </div>
+</body>
+</html>
