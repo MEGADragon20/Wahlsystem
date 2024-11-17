@@ -89,6 +89,8 @@ def evaluate():#
                 if count_dubious_IPs(dubiousIPs, request.remote_addr) >= 5:
                     forbiddenIps.append(request.remote_addr)
                 return render_template('error.html', message="Invalid verification code")
+        else:
+            return render_template("error.html", message="Invalid passport id")
 
 @app.route('/fdp')
 def external_redirect():
