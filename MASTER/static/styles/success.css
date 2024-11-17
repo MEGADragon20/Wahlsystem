@@ -1,0 +1,14 @@
+#box{
+    align-content: center;
+}
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+body{
+    align-items: center;
+}
+form{
+    align-content: center;
+}

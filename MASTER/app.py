@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template, request, redirect, jsonify
+from flask import render_template, request, redirect
 import random as r
 import json
 from datetime import datetime as dt
@@ -89,8 +89,7 @@ def evaluate():#
                 if count_dubious_IPs(dubiousIPs, request.remote_addr) >= 5:
                     forbiddenIps.append(request.remote_addr)
                 return render_template('error.html', message="Invalid verification code")
-        else:
-            return render_template("error.html", message="Invalid passport id")
+    return render_template("error.html", message="Invalid passport id")
 
 @app.route('/fdp')
 def external_redirect():

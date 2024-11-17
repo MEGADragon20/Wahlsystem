@@ -1,9 +1,9 @@
 {
-    "Gruene": 0,
-    "FDP": 0,
-    "AfD": 0,
-    "SPD": 0,
-    "Union": 0,
-    "BSW": 0,
-    "Die Linke": 0
+    "Gruene": 5,
+    "FDP": 3,
+    "AfD": 1,
+    "SPD": 4,
+    "Union": 2,
+    "BSW": 7,
+    "Die Linke": 6
 }
