@@ -67,11 +67,13 @@ def leaderboard():
 """
  
 
-@app.route('/login')
+@app.route('/login', methods=['GET'])
 def login():
+    spID = request.args.get('passwordID')
+    sverif = request.args.get('verifcode')
     if request.remote_addr in forbiddenIps:
         return render_template('error.html', message="IP address is banned")
-    return render_template('login.html')
+    return render_template('login.html', sent_passportId = spID, sent_verifcode = sverif)
 
 @app.route('/evaluate', methods=['GET', 'POST'])
 def evaluate():#
