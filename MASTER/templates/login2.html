@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="static/styles/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="margin-bottom: 0%;margin-top: 0%;">
+    <img style="position: absolute; right: 0%;" src="OIP2.jpg" height="100" width="100">
+    <div style="text-align: center;align-items: center;display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;">
+        <div class="container">
+
+            <form method="POST" action="/evaluate" class="fo">
+                <label for="passportid"></label><br>
+                <input class="i" placeholder="Reisepass ID" type="text" id="passportId" name="passportId" size="25"><br>
+                <label for="Code"></label><br>
+                <input class="i" type="password" placeholder="Bestätigungscode" type="password" id="verifcode" name="verifcode"
+                    size="25"><br><br>
+            <label for="languages" ></label>
+
+            <select class="i" id="vote" name="vote"style="width: 100%;">
+        <option value="Nichts">Nichts Ausgewählt</option>
+        <option value="Die Union">Die Union</option>
+        <option value="SPD">SPD</option>
+        <option value="AFD">AFD</option>
+        <option value="Die Grünen">Die Grünen</option>
+        <option value="FDP">FDP</option>
+        <option value="BSW">BSW</option>
+        <option value="Die Linke">Die Linke</option>
+    </select><br><br>
+
+    <button type="submit">Versenden</button>
+            </form>
+
+    </div>
+    </div>
+</body>

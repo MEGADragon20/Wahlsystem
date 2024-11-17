@@ -40,13 +40,22 @@ def leaderboard():
         BSW = file_content["BSW"]/sum
         Union = file_content["Union"]/sum
         return render_template('results.html', fdp=FDP*faktor, spd=SPD*faktor, gruene=Gruene*faktor, afd=AfD*faktor, linke=Die_Linke*faktor, bsw=BSW*faktor, union=Union*faktor)
- 
 
-@app.route('/login')
+@app.route('/prelogin')
+def send_to_login():
+    return redirect('/login?passportID=&verifcode=')
+
+@app.route('/login', methods=['GET'])
 def login():
+    spID = request.args.get('passportID')
+    sverif = request.args.get('verifcode')
+    if spID == None:
+        spID = ""
+    if sverif == None:
+        sverif = ""
     if request.remote_addr in forbiddenIps:
         return render_template('error.html', message="IP address is banned")
-    return render_template('login.html')
+    return render_template('login2.html', sent_passportId = spID, sent_verifcode = sverif)
 
 @app.route('/evaluate', methods=['GET', 'POST'])
 def evaluate():#
@@ -55,6 +64,7 @@ def evaluate():#
     passportID = request.form.get("passportId")
     verifcode = request.form.get("verifcode")
     vote = request.form.get("vote")
+    print(passportID, verifcode, vote)
     with open("data/verif.json", 'r') as file:
         data = json.load(file)
     for i in data:
@@ -68,14 +78,8 @@ def evaluate():#
                     vote_data[vote] += 1
                     with open("data/votes.json", 'w') as f:
                         json.dump(vote_data, f, ensure_ascii= False, indent=4)
-                    pidgeon_message = {
-                        "passportId": passportID,
-                        "vote": vote
-                    }
-                    response = requests.post('http://172.16.5.236:5000/x', json = pidgeon_message)
-                    if response.status_code != 200:
-                        with open("data/log.txt", 'a') as f:
-                            f.write(f"{passportID}, {vote}, {dt.now()}, {request.remote_addr}\n")
+                    #with open("data/log.txt", 'a') as f:
+                    #    f.write(f"{passportID}, {vote}, {dt.now()}, {request.remote_addr}\n")
                     return render_template('success.html', passportID=passportID, vote=vote)
                 else:
                     return render_template('error.html', message="Already voted")
@@ -90,7 +94,9 @@ def evaluate():#
 def external_redirect():
     return redirect('https://www.fdp.de')
 
-
+@app.route('/overview')
+def overview():
+    return render_template('overview.html')
 @app.route('/', defaults= {'subpath':''})
 @app.route('/<path:subpath>')
 def catch_all(subpath):
