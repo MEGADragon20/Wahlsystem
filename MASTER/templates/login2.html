@@ -20,10 +20,10 @@ height: 100vh;">
 
             <form method="POST" action="/evaluate" class="fo">
                 <label for="passportid"></label><br>
-                <input class="i" placeholder="Reisepass ID" type="text" id="passportId" name="passportId" size="25"><br>
+                <input class="i" placeholder="Reisepass ID" type="text" id="passportId" name="passportId" size="25" value="{{sent_passportId}}"><br>
                 <label for="Code"></label><br>
                 <input class="i" type="password" placeholder="Bestätigungscode" type="password" id="verifcode" name="verifcode"
-                    size="25"><br><br>
+                    size="25" value="{{sent_verifcode}}"><br><br>
             <label for="languages" ></label>
 
             <select class="i" id="vote" name="vote"style="width: 100%;">
