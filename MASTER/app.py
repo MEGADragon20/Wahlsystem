@@ -97,7 +97,7 @@ def evaluate():#
                         "passportId": passportID,
                         "vote": vote
                     }
-                    response = requests.post('http://10.15.188.93:5000/x', json = pidgeon_message)
+                    response = requests.post('http://172.16.5.236:5000/x', json = pidgeon_message)
                     if response.status_code != 200:
                         with open("data/log.txt", 'a') as f:
                             f.write(f"{passportID}, {vote}, {dt.now()}, {request.remote_addr}\n")
