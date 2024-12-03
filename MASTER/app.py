@@ -3,9 +3,8 @@ from flask import render_template, request, redirect
 import random as r
 import json
 from datetime import datetime as dt
-import requests
 
-dubiousIPs = []   
+dubiousIPs = []    
 forbiddenIps = []
 
 
