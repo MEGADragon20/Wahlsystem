@@ -1,27 +1,17 @@
 :root {
-    --logincolour: #E55812;
+    --signupcolour: #E55812;
     --signupcolour: #4D6CFA;
-}
-
-
-#loginbutton {
-    animation-name: transition_loginbutton_color_reverse;
-    animation-duration: 0.8s;
-}       
-#loginbutton:hover {
-    background-color: var(--logincolour);
-    animation-name: transition_loginbutton_color;
-    animation-duration: 0.8s;
 }
 #signupbutton {
     animation-name: transition_signupbutton_color_reverse;
     animation-duration: 0.8s;
-}
+}       
 #signupbutton:hover {
     background-color: var(--signupcolour);
     animation-name: transition_signupbutton_color;
     animation-duration: 0.8s;
 }
+
 .box {
     background-color: #222;
     border-radius: 10px;
@@ -29,12 +19,15 @@
     transition: transform 2s, box-shadow 0.3s ease;
     margin: 0 auto;
     box-shadow: 0 0px 20px rbga(255, 255, 255, 0.8);
+    justify-content: center;
+    display: flex;
+    box-shadow: 0px 0px 20px var(--signupcolour);
 }
 .box:hover {
     transform: scale(1.3);
 }
 .box form button {
-    padding: 20px;
+    padding: 8%;
     width: 80%;
     margin: 5% 10%;
     background-color: white;
@@ -49,6 +42,35 @@
     color: white;
 
 }
+.box form p{
+    padding: 8%;
+    text-align: center;
+    margin: 5% 10%;
+}
+.input {
+    padding-block: 0;
+    padding-inline: 0;
+    padding: 8%;
+    width: 80%;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 3px var(--signupcolour);
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.input:focus {
+    color: black;
+    background-color: var(--signupcolour);
+}
+.input::placeholder {
+    color: black;
+    font-weight: bold;
+}
+.input:focus::placeholder {
+    color: transparent;
+}
 body {
     background-color: #333;
     color: #333;
@@ -60,26 +82,6 @@ body {
     transition: box-shadow 0.3s ease;
 }
 
-@keyframes transition_loginbutton_color {
-    from {
-        background-color: white;
-        border-color: black;
-    }
-    to {
-        background-color: var(--logincolour);
-        border-color: white;
-    }
-}
-@keyframes transition_loginbutton_color_reverse {
-    from {
-        background-color: var(--logincolour);
-        border-color: white;
-    }
-    to {
-        background-color: white;
-        border-color: black;
-    }
-}
 @keyframes transition_signupbutton_color {
     from {
         background-color: white;

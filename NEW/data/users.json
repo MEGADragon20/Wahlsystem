@@ -2,5 +2,17 @@
     "DevilLilly123": {
         "email": "lilly@bestgf.com",
         "password": "scrypt:32768:8:1$u7lIT9eGmwN9GbR6$f1b057558a3c84dd77c3438d371f8425b8901b5af47fdff84aaf927b6d49edb9a44faf3db1129a45bc1bf0aac8e5a2f324c957eae05844ab7a1e5fecba63ea87"
+    },
+    "emilia": {
+        "email": "emilia@gmail.com",
+        "password": "scrypt:32768:8:1$zsPT10ArOFxIF27c$93bd0a82bef2805c9a6dfbf9a452d5a089b513758fcf70f801215d60f7a4f4256b7ffb0ab9024458c0603b1c92fa06d4df82a60405dbb96920a4daa9358bd087"
+    },
+    "pablo": {
+        "email": "banana@banana.ban",
+        "password": "scrypt:32768:8:1$t93CQPJn4wuJxGrc$5d8b6470fe215af52ea9221f8f833b2a5286a93774861f595d9e13f926b4241e8ef7dae1394f484f6765e5d1781f447849bebb32571b818aaac4d1a490532943"
+    },
+    "madeo": {
+        "email": "ulrich@gmail.it",
+        "password": "scrypt:32768:8:1$5lxLzU7Hed8GvyIS$bd9e278306e5990edb94b08faa58f21f16fedc6b531d6fb1c491bb8c4b9d68bfc978a3499580faef6db93b746f2e306c16030622613a4af01a18ae7a0dde2d41"
     }
 }

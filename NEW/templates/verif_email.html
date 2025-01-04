@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificate Email</title>
+</head>
+<body>
+    <h1>{username}? Is that you?</h1>
+    {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+    <form action="/verificate_signup" method="post">
+        <input type="text" name="input_token" placeholder="XXXXXX" >
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
