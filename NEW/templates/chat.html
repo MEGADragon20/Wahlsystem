@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/styles/chat.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="chat_interface">
+        {% if msgs %}
+            {% for msg in msgs %}
+            <div class="{{msg.sender}}">
+                <p>{{msg.msg}}</p>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p class="lilly">You have never written with this user before. Write a first message to start a convo.</p>
+        {% endif %}
+    </div>
+    <div>
+        <form id="message_form" action="/send_msg/{{recipient}}" method="POST">
+            <input type="text" name="msg" placeholder="Type your message...">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>

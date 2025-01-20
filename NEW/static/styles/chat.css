@@ -1,0 +1,17 @@
+.self {
+    text-align: right;
+    color: black;
+    background-color: white;
+}
+.other {
+    text-align: left;
+    color: white;
+    background-color: black;
+}
+#chat_interface {
+    background-color: #222;
+    align-items: right;
+}
+body {
+    background-color: #333;
+}

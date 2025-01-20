@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="static/styles/verif_email.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificate Email</title>
 </head>
 <body>
-    <h1>{username}? Is that you?</h1>
+    <div class="box">
+    <h1>{{username}}? Is that you?</h1>
+
+    <form action="/verificate_signup" method="post">
+        <input type="text" class="input" name="input_token" placeholder="XXXXXX" maxlength="6" minlength="6">
+        <button type="submit" id="submitbutton">SUBMIT</button>
+    </form>
     {% if error_message %}
         <p style="color: red;">{{ error_message }}</p>
     {% endif %}
-    <form action="/verificate_signup" method="post">
-        <input type="text" name="input_token" placeholder="XXXXXX" >
-        <button type="submit">SUBMIT</button>
-    </form>
-</body>
+</div>
+</body> 
 </html>
