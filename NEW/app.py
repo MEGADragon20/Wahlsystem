@@ -44,7 +44,7 @@ def submit_login():
             data = json.load(file)
         if username in data and check_password_hash(data[username]["password"], password):
             session['username'] = username
-            return render_template('/success.html', message="Log-in Successfull (i dont english T-T)")
+            return redirect('/chat')
         else:
             return render_template('login.html', error_message="Invalid username or password")
     except (FileNotFoundError, json.JSONDecodeError):
@@ -79,7 +79,7 @@ def submit_signup():
     for i in range(6):
         verifcode += str(r.randint(0, 9))
 
-    session['username'] = username
+    session['signup_username'] = username
     session['email'] = email
     session['password'] = hashed_password
     session['token'] = generate_password_hash(verifcode)
@@ -95,7 +95,7 @@ def submit_signup():
 @app.route('/verificate_signup', methods=['GET', 'POST'])
 def verificate_signup():
     if request.method == 'POST':
-        username = session.get('username')
+        username = session.get('signup_username')
         email = session.get('email')
         hashed_password = session.get('password')
         correct_token = session.get('token')
@@ -111,11 +111,11 @@ def verificate_signup():
             except (FileNotFoundError, json.JSONDecodeError):
                 data = {}
             
-            data[username] = {"email": email, "password": hashed_password}
+            data[username] = {"email": email, "password": hashed_password, "chat": {}}
             os.makedirs("data", exist_ok=True)
             with open("data/users.json", 'w') as f:
                 json.dump(data, f, ensure_ascii=False, indent=4)
-            
+            session['username'] = username
             return render_template('success.html', message="Registration successful!")
         else:
             return render_template('verif_email.html', error_message="Incorrect verification code.")
@@ -134,12 +134,17 @@ def profile(username):
 @app.route('/chat', defaults= {'username':''})
 @app.route('/chat/<path:username>')
 def chat(username):
-    if username is None:
-        return chat_overview() #  TODO
+    self = session['username']
+    if username == '':
+        data = user_data_from_json(self)
+        print(data["chat"])
+        users = data["chat"].keys()
+        print(users)
+        return render_template("chat_overview.html", users = users) #  TODO
     elif username == 'static/styles/chat.css':
         return app.send_static_file('styles/chat.css')
     # load session user
-    self = session['username']
+    
     # err handling
     if self == None:
         return render_template('error.html', err_num = "401", message = "You are not logged in!")

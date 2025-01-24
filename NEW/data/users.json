@@ -31,6 +31,38 @@
                 {
                     "sender": "other",
                     "msg": "https://prod.liveshare.vsengsaas.visualstudio.com/join?535592AB0C105A2ADFC5133401D4E08444E3"
+                },
+                {
+                    "sender": "self",
+                    "msg": "hello"
+                },
+                {
+                    "sender": "self",
+                    "msg": "hello"
+                },
+                {
+                    "sender": "other",
+                    "msg": "how are you"
+                },
+                {
+                    "sender": "self",
+                    "msg": "wd"
+                },
+                {
+                    "sender": "self",
+                    "msg": "How are you doinnn? "
+                },
+                {
+                    "sender": "self",
+                    "msg": "Hello"
+                },
+                {
+                    "sender": "self",
+                    "msg": "/d"
+                },
+                {
+                    "sender": "self",
+                    "msg": "where are you at?"
                 }
             ]
         }
@@ -67,6 +99,38 @@
                 {
                     "sender": "self",
                     "msg": "https://prod.liveshare.vsengsaas.visualstudio.com/join?535592AB0C105A2ADFC5133401D4E08444E3"
+                },
+                {
+                    "sender": "other",
+                    "msg": "hello"
+                },
+                {
+                    "sender": "other",
+                    "msg": "hello"
+                },
+                {
+                    "sender": "self",
+                    "msg": "how are you"
+                },
+                {
+                    "sender": "other",
+                    "msg": "wd"
+                },
+                {
+                    "sender": "other",
+                    "msg": "How are you doinnn? "
+                },
+                {
+                    "sender": "other",
+                    "msg": "Hello"
+                },
+                {
+                    "sender": "other",
+                    "msg": "/d"
+                },
+                {
+                    "sender": "other",
+                    "msg": "where are you at?"
                 }
             ],
             "fernando": [
