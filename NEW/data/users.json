@@ -244,6 +244,40 @@
                     "sender": "other",
                     "msg": "s"
                 }
+            ],
+            "Juan2": [
+                {
+                    "sender": "other",
+                    "msg": "/Fernando"
+                },
+                {
+                    "sender": "other",
+                    "msg": "Hey bro"
+                },
+                {
+                    "sender": "other",
+                    "msg": "Wassup"
+                },
+                {
+                    "sender": "self",
+                    "msg": "Hellooooo"
+                },
+                {
+                    "sender": "other",
+                    "msg": "i hate niggers"
+                },
+                {
+                    "sender": "other",
+                    "msg": "Fuck em niggers"
+                },
+                {
+                    "sender": "other",
+                    "msg": "/pablo"
+                },
+                {
+                    "sender": "self",
+                    "msg": "https://prod.liveshare.vsengsaas.visualstudio.com/join?00155555F4D1863C6BEA9329393DC18640E5"
+                }
             ]
         }
     },
@@ -255,6 +289,46 @@
                 {
                     "sender": "other",
                     "msg": "hi"
+                }
+            ]
+        }
+    },
+    "Juan2": {
+        "email": "jdwkjfgjdfghjkdy@cocksuck.com",
+        "password": "scrypt:32768:8:1$a8LNLhY4pIiy0NGW$537b71c59b5ee9d37c8471c96f194901a223cb8ba5fa88bbcf510c2a9898f93df11f8ba1599b41e0e338b05b7ec770d253235e955c18d174152b9de6ba881713",
+        "chat": {
+            "fernando": [
+                {
+                    "sender": "self",
+                    "msg": "/Fernando"
+                },
+                {
+                    "sender": "self",
+                    "msg": "Hey bro"
+                },
+                {
+                    "sender": "self",
+                    "msg": "Wassup"
+                },
+                {
+                    "sender": "other",
+                    "msg": "Hellooooo"
+                },
+                {
+                    "sender": "self",
+                    "msg": "i hate niggers"
+                },
+                {
+                    "sender": "self",
+                    "msg": "Fuck em niggers"
+                },
+                {
+                    "sender": "self",
+                    "msg": "/pablo"
+                },
+                {
+                    "sender": "other",
+                    "msg": "https://prod.liveshare.vsengsaas.visualstudio.com/join?00155555F4D1863C6BEA9329393DC18640E5"
                 }
             ]
         }
