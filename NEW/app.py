@@ -143,6 +143,8 @@ def chat(username):
         return render_template("chat_overview.html", users = users) #  TODO
     elif username == 'static/styles/chat.css':
         return app.send_static_file('styles/chat.css')
+    elif username == 'static/scripts/chat.js':
+        return app.send_static_file('scripts/chat.js')
     # load session user
     
     # err handling
@@ -155,7 +157,8 @@ def chat(username):
         return render_template('error.html', err_num = "410", message ="You are logged in but your account doesnt exist. We are trying to improve issues like this every day - We are sorry")
     if username in user_data['chat'].keys():
         the_chat = user_data["chat"][username] # chat between user and username
-        return render_template('chat.html', msgs=the_chat, recipient=username)
+        contacts = user_data["chat"].keys() # list of contacts
+        return render_template('chat.html', msgs=the_chat, recipient=username, contacts = contacts)
     else:
         return render_template('chat.html', recipient=username)
     

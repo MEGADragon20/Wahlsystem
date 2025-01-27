@@ -63,6 +63,60 @@
                 {
                     "sender": "self",
                     "msg": "where are you at?"
+                },
+                {
+                    "sender": "self",
+                    "msg": "xxx"
+                },
+                {
+                    "sender": "self",
+                    "msg": "xxxxxxxxxxx"
+                },
+                {
+                    "sender": "self",
+                    "msg": "Input is great"
+                },
+                {
+                    "sender": "self",
+                    "msg": "geugfeugfeugfeugfiuwegfu9egfiuewgewguwegfuegfiuegfuegfefge"
+                },
+                {
+                    "sender": "self",
+                    "msg": "s"
+                },
+                {
+                    "sender": "self",
+                    "msg": "gcgcxztzdz"
+                },
+                {
+                    "sender": "self",
+                    "msg": "godown"
+                },
+                {
+                    "sender": "self",
+                    "msg": "wed"
+                },
+                {
+                    "sender": "self",
+                    "msg": "a"
+                },
+                {
+                    "sender": "other",
+                    "msg": "hola"
+                },
+                {
+                    "sender": "self",
+                    "msg": "Hola"
+                },
+                {
+                    "sender": "other",
+                    "msg": "Que tal tu dia?"
+                }
+            ],
+            "juan": [
+                {
+                    "sender": "self",
+                    "msg": "hi"
                 }
             ]
         }
@@ -131,6 +185,54 @@
                 {
                     "sender": "other",
                     "msg": "where are you at?"
+                },
+                {
+                    "sender": "other",
+                    "msg": "xxx"
+                },
+                {
+                    "sender": "other",
+                    "msg": "xxxxxxxxxxx"
+                },
+                {
+                    "sender": "other",
+                    "msg": "Input is great"
+                },
+                {
+                    "sender": "other",
+                    "msg": "geugfeugfeugfeugfiuwegfu9egfiuewgewguwegfuegfiuegfuegfefge"
+                },
+                {
+                    "sender": "other",
+                    "msg": "s"
+                },
+                {
+                    "sender": "other",
+                    "msg": "gcgcxztzdz"
+                },
+                {
+                    "sender": "other",
+                    "msg": "godown"
+                },
+                {
+                    "sender": "other",
+                    "msg": "wed"
+                },
+                {
+                    "sender": "other",
+                    "msg": "a"
+                },
+                {
+                    "sender": "self",
+                    "msg": "hola"
+                },
+                {
+                    "sender": "other",
+                    "msg": "Hola"
+                },
+                {
+                    "sender": "self",
+                    "msg": "Que tal tu dia?"
                 }
             ],
             "fernando": [
@@ -147,6 +249,14 @@
     },
     "juan": {
         "email": "sdfghjk@ed.ch",
-        "password": "scrypt:32768:8:1$084O86VfFf61NuRU$f93161e357e225e6f38ec10c7902fbabafb628f23a28ab9cff92ebd03889c8bbe6d4f51e4e6641dfc351417fc28d0dd8c8c2fdcfc0e6a32077e5e3e50b468e07"
+        "password": "scrypt:32768:8:1$084O86VfFf61NuRU$f93161e357e225e6f38ec10c7902fbabafb628f23a28ab9cff92ebd03889c8bbe6d4f51e4e6641dfc351417fc28d0dd8c8c2fdcfc0e6a32077e5e3e50b468e07",
+        "chat": {
+            "pablo": [
+                {
+                    "sender": "other",
+                    "msg": "hi"
+                }
+            ]
+        }
     }
 }
