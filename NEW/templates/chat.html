@@ -4,44 +4,44 @@
     <link rel="stylesheet" href="static/styles/chat.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chatroom</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <script defer src="static/scripts/chat.js"></script>
 </head>
 <body>
-    <script src="static/scripts/chat.js"></script>
-    <div id = "chat_selection">
+    <div id="chat_selection"> 
         {% if contacts %}
             {% for contact in contacts %}
-                {% if contact == recipient %}
-                    <div class="selected contact" href = "{{ url_for('chat', username=contact) }}">
-                        <a href="{{ url_for('chat', username=contact) }}">{{contact}}</a>
-                    </div>
-                {%else %}
-                <div class="contact" href="{{ url_for('chat', username=contact) }}">
-                    <a href="{{ url_for('chat', username=contact) }}">{{contact}}</a>
+                <div class="contact {% if contact == recipient %}selected{% endif %}">
+                    <a href="{{ url_for('chat', username=contact) }}">{{ contact }}</a>
                 </div>
-                {% endif %}
             {% endfor %}
         {% else %}
-        <p class="lilly">You have no contacts yet. Add some by clicking on the 'Add Contact' button.</p>
+            <p class="lilly">You have no contacts yet. Add some by clicking on the 'Add Contact' button.</p>
         {% endif %}
-    </div>
-    <div id = "chat_interface">
-        {% if msgs %}
-            {% for msg in msgs %}
-            <div class="{{msg.sender}} msg">
-                <p>{{msg.msg}}</p>
-            </div>
-            {% endfor %}
-        {% else %}
-            <p class="lilly">You have never written with this user before. Write a first message to start a convo.</p>
-        {% endif %}
-    </div>
-    <div class="chat">
-        <form id="message_form" action="/send_msg/{{recipient}}" method="POST" autocomplete="off">
-            <input class = "input_field"type="text" name="msg" placeholder="Type your message...">
-            <button class = "send_msg_button"type="submit"><img src="{{url_for('static', filename='images/paper-plane.png')}}" /></button>
-        </form>
     </div>
     
+    <div id="chat_interface" data-recipient="{{ recipient }}">
+        <div id="messages">
+            {% if msgs %}
+                {% for msg in msgs %}
+                <div class="msg {{ msg.sender }}">
+                    <p>{{ msg.msg }}</p>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p class="lilly">You have never written with this user before. Write a first message to start a convo.</p>
+            {% endif %}
+        </div>
+    </div>
+    
+    <div class="chat">
+        <form id="message_form" autocomplete="off"> 
+            <input id="msg-input" class="input_field" type="text" name="msg" placeholder="Type your message...">
+            <button class="send_msg_button" type="submit">
+                <img src="{{ url_for('static', filename='images/paper-plane.png') }}" />
+            </button>
+        </form>
+    </div>
 </body>
 </html>

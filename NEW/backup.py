@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, current_app, session
-from flask_socketio import SocketIO, send, emit, join_room, leave_room
 import json
 import os
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -23,64 +22,6 @@ def user_data_from_json(username) -> dict:
 
 app = Flask(__name__)
 app.secret_key = "TheReturnOfTheJedi"
-socketio = SocketIO(app)
-@socketio.on('connect')
-def on_connect():
-    username = session.get('username')  # Get the username from the session
-    if username:
-        join_room(username)
-        print(f'{username} has joined the room {username}')
-
-@socketio.on('disconnect')
-def on_disconnect():
-    username = session.get('username')
-    if username:
-        leave_room(username)  # Leave the room when disconnecting
-        print(f"{username} has left room {username}")
-        
-@socketio.on("message")
-def handle_message(data):
-    self = session.get("username")  # Get sender's username
-    recipient = data.get("recipient")  # Get recipient's username
-    msg = data.get("msg")  # Get message text
-
-    if not self or not recipient or not msg:
-        return  # Ignore invalid messages
-
-    if not msg.startswith("/"):
-        with open("data/users.json", "r+") as f:
-            users = json.load(f)
-
-            # Ensure the chat structure exists
-            users.setdefault(self, {}).setdefault("chat", {}).setdefault(recipient, [])
-            users.setdefault(recipient, {}).setdefault("chat", {}).setdefault(self, [])
-
-            # Append message to chat history
-            users[self]["chat"][recipient].append({"sender": "self", "msg": msg})
-            users[recipient]["chat"][self].append({"sender": "other", "msg": msg})
-
-            # Save back to JSON
-            f.seek(0)
-            json.dump(users, f, indent=4)
-            f.truncate()
-
-        # Emit message in real-time to both sender and recipient
-        emit("message", {"sender": "self", "msg": msg}, room=self)
-        emit("message", {"sender": "other", "msg": msg}, room=recipient)
-        print(socketio.server.manager.rooms)
-    else:
-        if msg.startswith("/clear"):
-            print("Clearing")
-            with open("data/users.json", "r+") as f:
-                users = json.load(f)
-                users[self]["chat"][recipient] = []
-                users[recipient]["chat"][self] = []
-                f.seek(0)
-                json.dump(users, f, indent=4)
-                f.truncate()
-        elif msg.startswith("/quit"):
-            pass
-
 
 
 @app.route('/')
@@ -219,6 +160,42 @@ def chat(username):
         return render_template('chat.html', recipient=username)
     
 
+@app.route('/send_msg/<path:recipient>', methods = ['POST'])
+def send_msg(recipient):
+    msg = request.form.get('msg')
+    print("msg", msg)
+    self = session.get("username")
+    print("rec", recipient)
+    if msg[0] == "/":
+        # TODO in chat command handling
+        pass
+    if recipient == self:
+        return render_template('error.html', err_num = "403", message = "You cannot send messages to yourself")
+    if recipient is None:
+        return render_template('error.html', err_num = "400", message = "You are not writing anyone")
+    if self == None:
+        return render_template('error.html', err_num = "401", message = "You are not logged in!")
+    self_data = user_data_from_json(self)
+    user_data = user_data_from_json(recipient)
+    if user_data is None:
+        return render_template('error.html', err_num = "404", message ="We couldn't find the account you were trying to reach")
+    if self_data is None:
+        return render_template('error.html', err_num = "410", message ="You are logged in but your account doesnt exist. We are trying to improve issues like this every day - We are sorry")
+    with open("data/users.json", 'r+') as f:
+        data = json.load(f)
+        if recipient not in data[self]["chat"].keys():
+            data[self]["chat"][recipient] = []
+        if self not in data[recipient]["chat"].keys():
+            data[recipient]["chat"][self] = []
+        
+        data[self]["chat"][recipient].append({"sender": "self", "msg": msg})
+        data[recipient]["chat"][self].append({"sender": "other", "msg": msg})
+        f.seek(0)
+        json.dump(data, f, indent=4)
+        f.truncate()
+
+
+    return redirect('/chat/'+ recipient)
 
 
 @app.route('/', defaults= {'subpath':''})

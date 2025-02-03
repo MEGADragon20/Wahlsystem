@@ -6,117 +6,41 @@
             "fernando": [
                 {
                     "sender": "self",
-                    "msg": "sqdsqsq"
+                    "msg": "hi"
+                },
+                {
+                    "sender": "self",
+                    "msg": "Hallo"
+                },
+                {
+                    "sender": "self",
+                    "msg": "Wie gehts"
+                },
+                {
+                    "sender": "self",
+                    "msg": "was machst du  gerade"
+                },
+                {
+                    "sender": "self",
+                    "msg": "d"
+                },
+                {
+                    "sender": "self",
+                    "msg": "#TODO"
                 },
                 {
                     "sender": "other",
-                    "msg": "dw"
-                },
-                {
-                    "sender": "self",
-                    "msg": "dw"
-                },
-                {
-                    "sender": "self",
-                    "msg": "wd"
-                },
-                {
-                    "sender": "self",
-                    "msg": "I am a little guy in a big worldL redirection.[2]  A user agent may carry out the additional action with no user interaction only if the method used in the second request is GET or HEAD. A user agent may automatically redirect a request. A user agent should detect and intervene to prevent cyclical redirects.[1]:\u200a\u00a715.4\u200a  300 Multiple Choices Indicates multiple options for the resource from which the client may choose (via agent-driven content negotiation). For example, this code could be used to present multiple video format options, to list files with different filename extensions, or to suggest word-sense disambiguation. 301 Moved Permanently This and all future requests should be directed to the given URI. 302 Found (Previously \"Moved temporarily\") Tells the client to look at (browse to) another URL. The HTTP/1.0 specification required the client to perform a temporary redirect with the same method (the original describing phrase was \"Moved Temporarily\"),[9] but popular browsers implemented 302 redirects by changing the method to GET. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.[1]:\u200a\u00a715.4\u200a 303 See Other (since HTTP/1.1) The response to the request can be found under another URI using the GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a new GET request to the given URI."
-                },
-                {
-                    "sender": "self",
-                    "msg": "Hello"
-                },
-                {
-                    "sender": "other",
-                    "msg": "https://prod.liveshare.vsengsaas.visualstudio.com/join?535592AB0C105A2ADFC5133401D4E08444E3"
-                },
-                {
-                    "sender": "self",
-                    "msg": "hello"
-                },
-                {
-                    "sender": "self",
-                    "msg": "hello"
-                },
-                {
-                    "sender": "other",
-                    "msg": "how are you"
-                },
-                {
-                    "sender": "self",
-                    "msg": "wd"
-                },
-                {
-                    "sender": "self",
-                    "msg": "How are you doinnn? "
-                },
-                {
-                    "sender": "self",
-                    "msg": "Hello"
-                },
-                {
-                    "sender": "self",
-                    "msg": "/d"
-                },
-                {
-                    "sender": "self",
-                    "msg": "where are you at?"
-                },
-                {
-                    "sender": "self",
-                    "msg": "xxx"
-                },
-                {
-                    "sender": "self",
-                    "msg": "xxxxxxxxxxx"
-                },
-                {
-                    "sender": "self",
-                    "msg": "Input is great"
-                },
-                {
-                    "sender": "self",
-                    "msg": "geugfeugfeugfeugfiuwegfu9egfiuewgewguwegfuegfiuegfuegfefge"
-                },
-                {
-                    "sender": "self",
-                    "msg": "s"
-                },
-                {
-                    "sender": "self",
-                    "msg": "gcgcxztzdz"
-                },
-                {
-                    "sender": "self",
-                    "msg": "godown"
-                },
-                {
-                    "sender": "self",
-                    "msg": "wed"
-                },
-                {
-                    "sender": "self",
-                    "msg": "a"
-                },
-                {
-                    "sender": "other",
-                    "msg": "hola"
-                },
-                {
-                    "sender": "self",
-                    "msg": "Hola"
-                },
-                {
-                    "sender": "other",
-                    "msg": "Que tal tu dia?"
+                    "msg": "Wie gehts"
                 }
             ],
             "juan": [
                 {
                     "sender": "self",
                     "msg": "hi"
+                },
+                {
+                    "sender": "self",
+                    "msg": "d"
                 }
             ]
         }
@@ -128,111 +52,31 @@
             "pablo": [
                 {
                     "sender": "other",
-                    "msg": "sqdsqsq"
+                    "msg": "hi"
+                },
+                {
+                    "sender": "other",
+                    "msg": "Hallo"
+                },
+                {
+                    "sender": "other",
+                    "msg": "Wie gehts"
+                },
+                {
+                    "sender": "other",
+                    "msg": "was machst du  gerade"
+                },
+                {
+                    "sender": "other",
+                    "msg": "d"
+                },
+                {
+                    "sender": "other",
+                    "msg": "#TODO"
                 },
                 {
                     "sender": "self",
-                    "msg": "dw"
-                },
-                {
-                    "sender": "other",
-                    "msg": "dw"
-                },
-                {
-                    "sender": "other",
-                    "msg": "wd"
-                },
-                {
-                    "sender": "other",
-                    "msg": "I am a little guy in a big worldL redirection.[2]  A user agent may carry out the additional action with no user interaction only if the method used in the second request is GET or HEAD. A user agent may automatically redirect a request. A user agent should detect and intervene to prevent cyclical redirects.[1]:\u200a\u00a715.4\u200a  300 Multiple Choices Indicates multiple options for the resource from which the client may choose (via agent-driven content negotiation). For example, this code could be used to present multiple video format options, to list files with different filename extensions, or to suggest word-sense disambiguation. 301 Moved Permanently This and all future requests should be directed to the given URI. 302 Found (Previously \"Moved temporarily\") Tells the client to look at (browse to) another URL. The HTTP/1.0 specification required the client to perform a temporary redirect with the same method (the original describing phrase was \"Moved Temporarily\"),[9] but popular browsers implemented 302 redirects by changing the method to GET. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.[1]:\u200a\u00a715.4\u200a 303 See Other (since HTTP/1.1) The response to the request can be found under another URI using the GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a new GET request to the given URI."
-                },
-                {
-                    "sender": "other",
-                    "msg": "Hello"
-                },
-                {
-                    "sender": "self",
-                    "msg": "https://prod.liveshare.vsengsaas.visualstudio.com/join?535592AB0C105A2ADFC5133401D4E08444E3"
-                },
-                {
-                    "sender": "other",
-                    "msg": "hello"
-                },
-                {
-                    "sender": "other",
-                    "msg": "hello"
-                },
-                {
-                    "sender": "self",
-                    "msg": "how are you"
-                },
-                {
-                    "sender": "other",
-                    "msg": "wd"
-                },
-                {
-                    "sender": "other",
-                    "msg": "How are you doinnn? "
-                },
-                {
-                    "sender": "other",
-                    "msg": "Hello"
-                },
-                {
-                    "sender": "other",
-                    "msg": "/d"
-                },
-                {
-                    "sender": "other",
-                    "msg": "where are you at?"
-                },
-                {
-                    "sender": "other",
-                    "msg": "xxx"
-                },
-                {
-                    "sender": "other",
-                    "msg": "xxxxxxxxxxx"
-                },
-                {
-                    "sender": "other",
-                    "msg": "Input is great"
-                },
-                {
-                    "sender": "other",
-                    "msg": "geugfeugfeugfeugfiuwegfu9egfiuewgewguwegfuegfiuegfuegfefge"
-                },
-                {
-                    "sender": "other",
-                    "msg": "s"
-                },
-                {
-                    "sender": "other",
-                    "msg": "gcgcxztzdz"
-                },
-                {
-                    "sender": "other",
-                    "msg": "godown"
-                },
-                {
-                    "sender": "other",
-                    "msg": "wed"
-                },
-                {
-                    "sender": "other",
-                    "msg": "a"
-                },
-                {
-                    "sender": "self",
-                    "msg": "hola"
-                },
-                {
-                    "sender": "other",
-                    "msg": "Hola"
-                },
-                {
-                    "sender": "self",
-                    "msg": "Que tal tu dia?"
+                    "msg": "Wie gehts"
                 }
             ],
             "fernando": [
@@ -255,6 +99,10 @@
                 {
                     "sender": "other",
                     "msg": "hi"
+                },
+                {
+                    "sender": "other",
+                    "msg": "d"
                 }
             ]
         }
