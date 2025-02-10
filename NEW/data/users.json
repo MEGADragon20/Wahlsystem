@@ -3,7 +3,12 @@
         "email": "banana@banana.ban",
         "password": "scrypt:32768:8:1$t93CQPJn4wuJxGrc$5d8b6470fe215af52ea9221f8f833b2a5286a93774861f595d9e13f926b4241e8ef7dae1394f484f6765e5d1781f447849bebb32571b818aaac4d1a490532943",
         "chat": {
-            "fernando": [],
+            "fernando": [
+                {
+                    "sender": "other",
+                    "msg": "https://prod.liveshare.vsengsaas.visualstudio.com/join?5C550BA935F1D39AE691BF9E56B891B38DF8"
+                }
+            ],
             "juan": [
                 {
                     "sender": "self",
@@ -20,7 +25,12 @@
         "email": "santa@klaus.com",
         "password": "scrypt:32768:8:1$0VJmXbj4YuCYlqfe$324ab7af9c87afb20702e76c92670978f89a9858b7fbe313662bb1c5a977b178fd589a35e349a902652ad468b2b963922f01096fafee76c996086bab77c02e88",
         "chat": {
-            "pablo": [],
+            "pablo": [
+                {
+                    "sender": "self",
+                    "msg": "https://prod.liveshare.vsengsaas.visualstudio.com/join?5C550BA935F1D39AE691BF9E56B891B38DF8"
+                }
+            ],
             "fernando": [
                 {
                     "sender": "self",
