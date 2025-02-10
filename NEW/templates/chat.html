@@ -20,8 +20,11 @@
             <p class="lilly">You have no contacts yet. Add some by clicking on the 'Add Contact' button.</p>
         {% endif %}
     </div>
-    
+
     <div id="chat_interface" data-recipient="{{ recipient }}">
+        <div id="overview">
+            
+        </div>
         <div id="messages">
             {% if msgs %}
                 {% for msg in msgs %}

@@ -42,6 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
         messagesDiv.appendChild(messageElement);
 
         // Auto-scroll to the latest message
-        scrollToBottom()
+        scrollToBottom();
     });
 });
